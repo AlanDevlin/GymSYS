@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FE7F047-7EB7-4F23-ADF5-BC4CD6015B9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GymSYS.My.MyApplication</StartupObject>
+    <RootNamespace>GymSYS</RootNamespace>
+    <AssemblyName>GymSYS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GymSYS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GymSYS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDeleteMemTypeDetails.Designer.vb">
+      <DependentUpon>frmDeleteMemTypeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteMemTypeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteMembers.Designer.vb">
+      <DependentUpon>frmDeleteMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMembers2.Designer.vb">
+      <DependentUpon>frmEditMembers2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMembers2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMembersEnterID.Designer.vb">
+      <DependentUpon>frmEditMembersEnterID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMembersEnterID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMemType.Designer.vb">
+      <DependentUpon>frmEditMemType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMemType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMemTypeSelected.Designer.vb">
+      <DependentUpon>frmEditMemTypeSelected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMemTypeSelected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListExpiringMemberships.Designer.vb">
+      <DependentUpon>frmListExpiringMemberships.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListExpiringMemberships.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMemType.Designer.vb">
+      <DependentUpon>frmListMemType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListMemType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberDeleted.Designer.vb">
+      <DependentUpon>frmMemberDeleted.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberDeleted.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateMember.Designer.vb">
+      <DependentUpon>frmCreateMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteMemType.Designer.vb">
+      <DependentUpon>frmDeleteMemType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteMemType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateMemType.Designer.vb">
+      <DependentUpon>frmCreateMemType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateMemType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMembers.Designer.vb">
+      <DependentUpon>frmMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseMembership.Designer.vb">
+      <DependentUpon>frmPurchaseMembership.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseMembership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseMembership2.Designer.vb">
+      <DependentUpon>frmPurchaseMembership2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseMembership2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchases.Designer.vb">
+      <DependentUpon>frmPurchases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevenueAnalysis.Designer.vb">
+      <DependentUpon>frmRevenueAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevenueAnalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactionsMenu.Designer.vb">
+      <DependentUpon>frmTransactionsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactionsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewMembers.Designer.vb">
+      <DependentUpon>frmViewMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewMembershipList.Designer.vb">
+      <DependentUpon>frmViewMembershipList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewMembershipList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcomeScreen.Designer.vb">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMembership Types.Designer.vb">
+      <DependentUpon>frmMembership Types.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMembership Types.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmDeleteMemTypeDetails.resx">
+      <DependentUpon>frmDeleteMemTypeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteMembers.resx">
+      <DependentUpon>frmDeleteMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMembers2.resx">
+      <DependentUpon>frmEditMembers2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMembersEnterID.resx">
+      <DependentUpon>frmEditMembersEnterID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMemType.resx">
+      <DependentUpon>frmEditMemType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMemTypeSelected.resx">
+      <DependentUpon>frmEditMemTypeSelected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListExpiringMemberships.resx">
+      <DependentUpon>frmListExpiringMemberships.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListMemType.resx">
+      <DependentUpon>frmListMemType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberDeleted.resx">
+      <DependentUpon>frmMemberDeleted.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateMember.resx">
+      <DependentUpon>frmCreateMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateMemType.resx">
+      <DependentUpon>frmCreateMemType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteMemType.resx">
+      <DependentUpon>frmDeleteMemType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMembers.resx">
+      <DependentUpon>frmMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseMembership.resx">
+      <DependentUpon>frmPurchaseMembership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseMembership2.resx">
+      <DependentUpon>frmPurchaseMembership2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchases.resx">
+      <DependentUpon>frmPurchases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevenueAnalysis.resx">
+      <DependentUpon>frmRevenueAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactionsMenu.resx">
+      <DependentUpon>frmTransactionsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewMembers.resx">
+      <DependentUpon>frmViewMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewMembershipList.resx">
+      <DependentUpon>frmViewMembershipList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcomeScreen.resx">
+      <DependentUpon>frmWelcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMembership Types.resx">
+      <DependentUpon>frmMembership Types.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymSYS Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymSYS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymSYS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymWelcomeScreen.jpe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelcomeScreen2.jpe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MembershipTypeMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MembershipTypeMenu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MembershipTypeMenu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymMember.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GymMember1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchases Menu.jpe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecordsMenu.jpe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu.jpe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
